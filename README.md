@@ -3,19 +3,21 @@ machines virtuelles
 
 Ma vm slave de celle d'enzo
 
-/etc/ansible/ ansible.cfg :
+**nano /etc/ansible/ansible.cfg** :
+
 ```
 [defaults]
 filehost=hosts
 ``` 
 
-/etc/ansible/ hosts :
+**nano /etc/ansible/hosts** :
+
 ```
 [server]
 sysadmin@172.25.192.9
 ``` 
 
-playbook utilisé
+**nano /etc/ansible/playbook.yml**
 ```
 ---
 - hosts: server
